@@ -34,7 +34,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 20px;
   }
   
@@ -106,7 +105,7 @@
     position: fixed;
     top: 0;
     color: #fff;
-    font-size: 150px;
+    font-size: 256px;
     font-weight: 800;
     mix-blend-mode: difference;
     padding: 10px 0;
@@ -117,7 +116,7 @@
 
 .marquee-content {
     display: flex;
-    animation: marquee 35s linear infinite;
+    animation: marquee 50s linear infinite;
 }
 
 .marquee-content span {
