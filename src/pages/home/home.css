@@ -217,6 +217,7 @@
 .subtitle-part {
   font-family: 'Geist Mono';
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .custom-hr {
@@ -230,6 +231,7 @@
 .carousel {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .carousel-button {
@@ -251,6 +253,27 @@
   max-width: 33.333%;
   padding: 0 10px;
   box-sizing: border-box;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #007bff;
 }
 
 @keyframes marquee {

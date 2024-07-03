@@ -5,26 +5,32 @@ import profileimage from '../../assets/img/vincent-van-gogh.jpg';
 import EPlogo from '../../assets/logo/EP-logo.svg';
 
 const videoUrls = [
-  "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-  "https://www.youtube.com/embed/V-_O7nl0Ii0",
-  "https://www.youtube.com/embed/2Vv-BfVoq4g",
-  "https://www.youtube.com/embed/7wtfhZwyrcc",
-  "https://www.youtube.com/embed/kJQP7kiw5Fk"
+  "https://www.youtube.com/embed/EzkpHQrEwYc",
+  "https://www.youtube.com/embed/tpKgKESCpQg",
+  "https://www.youtube.com/embed/Btbms6wxb3w",
+  "https://www.youtube.com/embed/umm5uT_lrno",
 ];
 
 const HomePage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 3) % videoUrls.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % videoUrls.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 3 + videoUrls.length) % videoUrls.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + videoUrls.length) % videoUrls.length);
   };
 
-  const currentVideos = videoUrls.slice(currentIndex, currentIndex + 3);
+  const getCurrentVideos = () => {
+    const result = [];
+    for (let i = 0; i < 3; i++) {
+      result.push(videoUrls[(currentIndex + i) % videoUrls.length]);
+    }
+    return result;
+  };
+
+  const currentVideos = getCurrentVideos();
 
   return (
     <div className='container'>
@@ -76,6 +82,15 @@ const HomePage: React.FC = () => {
             ))}
           </div>
           <button className='carousel-button' onClick={nextSlide}>›</button>
+        </div>
+        <div className='indicators'>
+          {videoUrls.map((_, index) => (
+            <span
+              key={index}
+              className={`indicator ${currentIndex === index ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(index)}
+            ></span>
+          ))}
         </div>
       </div>
       <div className="marquee">
