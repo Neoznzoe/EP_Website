@@ -1,3 +1,8 @@
+:root {
+  --redColor: rgba(244, 67, 54, 1);
+  --blueColor: rgba(33, 150, 243, 1);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,8 +42,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 64px;
+  font-family: 'Geist';
 }
+
 .list {
   position: relative;
   width: 20%;
@@ -104,7 +111,7 @@
 .list ul li span {
   position: relative;
   padding: 8px;
-  padding-left: 12px;
+  /* padding-left: 12px; */
   display: inline-block;
   z-index: 1;
   transition: 0.5s;
@@ -129,9 +136,9 @@
 .list ul li:hover:before {
   transform: scaleX(1);
 }
+
 .list {
-  padding: 8px;
-  padding-left: 12px;
+  padding: 24px 0;
   display: inline-block;
   z-index: 1;
   transition: 0.5s;
@@ -275,6 +282,41 @@
 .indicator.active {
   background-color: #007bff;
 }
+
+.flex-center {
+  background: #000;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.icon-3d {
+  padding: 10px;
+  color: #fff;
+}
+
+.icon-3d:hover {
+  animation: icon3d 1s infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px var(--redColor), -5px -6px var(--blueColor);
+  }
+  25% {
+    text-shadow: -5px -6px var(--redColor), 5px 4px var(--blueColor);
+  }
+  50% {
+    text-shadow: 5px -4px var(--redColor), -8px 4px var(--blueColor);
+  }
+  75% {
+    text-shadow: -8px -4px var(--redColor), -5px -4px var(--blueColor);
+  }
+  100% {
+    text-shadow: -5px 0 var(--redColor), 5px -4px var(--blueColor);
+  }
+}
+
 
 @keyframes marquee {
   0% { transform: translateX(0); }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './home.css';
 import profileimage from '../../assets/img/vincent-van-gogh.jpg';
 import EPlogo from '../../assets/logo/EP-logo.svg';
@@ -42,6 +44,9 @@ const HomePage: React.FC = () => {
           <img src={profileimage} alt="photo profil"/>
         </div>
         <div className="navPart">
+          <div className="miniBio">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis placeat provident illum odit cumque dolor reprehenderit eligendi id quae earum numquam, possimus, asperiores mollitia veritatis ut quidem. Nostrum, deserunt!</span>
+          </div>
           <div className="list">
             <ul>
               <li>
@@ -57,6 +62,18 @@ const HomePage: React.FC = () => {
                 <Link to="/contact"><span>Contact</span></Link>
               </li>
             </ul>
+          </div>
+          <div className="flex-center">
+            <i className="fa fa-twitter fa-4x icon-3d"></i>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebookF} size="4x" className="icon-3d" />
+            </a>
+            <a href="https://www.instagram.com/eliott_piccard/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} size="4x" className="icon-3d" />
+            </a>
+            <a href="https://www.linkedin.com/in/eliott-piccard-838ba7240/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedinIn} size="4x" className="icon-3d" />
+            </a>
           </div>
         </div>
       </div>
@@ -93,6 +110,7 @@ const HomePage: React.FC = () => {
           ))}
         </div>
       </div>
+
       <div className="marquee">
         <div className="marquee-content">
           <span>Eliott Piccard </span>
