@@ -1,9 +1,10 @@
 import React from 'react';
+import SectionHeader from '../../component/sectionHeader/sectionHeader';
 
 const SponsorsPage: React.FC = () => {
   return (
     <div>
-      <h1>Sponsors Page</h1>
+      <SectionHeader></SectionHeader>
     </div>
   );
 };

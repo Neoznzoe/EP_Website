@@ -1,9 +1,10 @@
 import React from 'react';
+import SectionHeader from '../../component/sectionHeader/sectionHeader';
 
 const ContactPage: React.FC = () => {
   return (
     <div>
-      <h1>Contact Page</h1>
+      <SectionHeader></SectionHeader>
     </div>
   );
 };
