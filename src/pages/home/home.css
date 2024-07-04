@@ -42,8 +42,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 64px;
+  padding: 200px 64px 80px;
   font-family: 'Geist';
+  gap: 24px;
 }
 
 .list {
@@ -67,7 +68,7 @@
   left: 0;
   color: #fff;
   list-style: none;
-  margin: 4px 0;
+  margin-bottom: 16px;
   border-left: 2px solid #f50057;
   transition: 0.5s;
   cursor: pointer;
@@ -186,7 +187,6 @@
   font-size: 150px;
   font-weight: 800;
   mix-blend-mode: difference;
-  padding: 10px 0;
   font-family: 'Clash Display';
   text-transform: uppercase;
   display: flex;
@@ -219,12 +219,14 @@
 .title-part {
   font-size: 26px;
   margin-bottom: 16px;
+  padding-left: 20px;
 }
 
 .subtitle-part {
   font-family: 'Geist Mono';
   font-size: 16px;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .custom-hr {
@@ -233,6 +235,7 @@
   height: 1px;
   background-color: #000;
   margin: 0 0 20px;
+  margin-left: 20px;
 }
 
 .carousel {

@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 160px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Clash Display';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 70px;
+}
+
+.header hr {
+    width: 100px;
+    margin: 10px auto;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.header h2 {
+    font-family: 'Clash Display';
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 50px;
+}
+
+.bios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bios .french, .bios .english {
+    width: 45%;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.bios .french {
+    margin-right: 10%;
+}
