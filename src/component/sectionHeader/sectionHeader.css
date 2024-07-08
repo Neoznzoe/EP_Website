@@ -16,6 +16,7 @@
 
 .leftPart a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .leftPart h1 {

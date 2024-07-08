@@ -1,0 +1,29 @@
+.sponsorsListContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sponsorsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 160px;
+  }
+  
+  .sponsorsList > div {
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  /* Align items to the left when there are less than 3 items in a row */
+  .sponsorsList > div:nth-child(3n + 1),
+  .sponsorsList > div:nth-child(3n + 2) {
+    margin-left: 0;
+  }
+  
+  /* .sponsorsList {
+    justify-content: flex-start;
+  } */
+  
