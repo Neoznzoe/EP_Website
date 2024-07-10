@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
           <Link to="/">
             <img className='logo' src={EPlogo} alt="Logo" />
           </Link>
-          <img src={profileimage} alt="photo profil"/>
+          <img src={profileimage} alt="photo profil" className='profilPicture'/>
         </div>
         <div className="navPart">
           <div className="miniBio">
