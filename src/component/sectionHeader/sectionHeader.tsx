@@ -24,7 +24,7 @@ const SectionHeader: React.FC = () => {
                 <Link to="/sponsors"><span>Sponsors</span></Link>
               </li>
               <li>
-                <Link to="/palmares"><span>Palmarès</span></Link>
+                <Link to="/resultat"><span>Résultats</span></Link>
               </li>
               <li>
                 <Link to="/contact"><span>Contact</span></Link>

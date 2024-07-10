@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="contact" element={<ContactPage />} />
           <Route path="sponsors" element={<SponsorsPage />} />
           <Route path="biography" element={<BiographyPage />} />
-          <Route path="palmares" element={<PalmaresPage />} />
+          <Route path="resultat" element={<PalmaresPage />} />
         </Route>
       </Routes>
     </Router>

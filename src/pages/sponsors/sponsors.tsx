@@ -8,9 +8,15 @@ import EnergiapuraImg from '../../assets/logo/sponsorsLogo/energiapura.jpg';
 import ReuschImg from '../../assets/logo/sponsorsLogo/reusch.jpg';
 import DynastarImg from '../../assets/logo/sponsorsLogo/dynastar.jpeg';
 import LangeImg from '../../assets/logo/sponsorsLogo/lange.png'
+import SaisiesImg from '../../assets/logo/sponsorsLogo/saisies.jpg'
 
 const SponsorsPage: React.FC = () => {
   const sponsors = [
+    {
+      imageSrc: SaisiesImg,
+      title: 'Les Saisies',
+      description: 'Another description for a different sponsor or product.',
+    },
     {
       imageSrc: LekiImg,
       title: 'Leki',
