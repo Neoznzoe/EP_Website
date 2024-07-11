@@ -65,13 +65,13 @@ const HomePage: React.FC = () => {
           </div>
           <div className="flex-center">
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebookF} className="icon-3d" />
+              <FontAwesomeIcon icon={faFacebookF} className="icon-3d icon-3dHome" />
             </a>
             <a href="https://www.instagram.com/eliott_piccard/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} className="icon-3d" />
+              <FontAwesomeIcon icon={faInstagram} className="icon-3d icon-3dHome" />
             </a>
             <a href="https://www.linkedin.com/in/eliott-piccard-838ba7240/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedinIn} className="icon-3d" />
+              <FontAwesomeIcon icon={faLinkedinIn} className="icon-3d icon-3dHome" />
             </a>
           </div>
         </div>

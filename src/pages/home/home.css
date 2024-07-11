@@ -293,9 +293,9 @@
   align-items: center; */
 }
 
-.icon-3d {
+.icon-3dHome {
   padding: 10px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .icon-3d:hover {
