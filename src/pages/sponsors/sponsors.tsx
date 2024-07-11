@@ -10,6 +10,8 @@ import DynastarImg from '../../assets/logo/sponsorsLogo/dynastar.jpeg';
 import LangeImg from '../../assets/logo/sponsorsLogo/lange.png'
 import SaisiesImg from '../../assets/logo/sponsorsLogo/saisies.jpg'
 
+import customImage from '../../assets/img/lucas-favre-BRTV55ErUZg-unsplash.jpg'
+
 const SponsorsPage: React.FC = () => {
   const sponsors = [
     {
@@ -51,7 +53,7 @@ const SponsorsPage: React.FC = () => {
 
   return (
     <div>
-      <SectionHeader />
+      <SectionHeader backgroundImage={customImage} />
       <div className="content">
         <div className="header">
           <h1>Sponsors</h1>

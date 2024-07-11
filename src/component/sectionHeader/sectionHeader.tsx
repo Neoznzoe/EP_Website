@@ -1,8 +1,13 @@
 import React from 'react';
 import './sectionHeader.css';
 import { Link } from 'react-router-dom';
+import defaultProfileImage  from '../../assets/img/quenten-janssen-W_z4awYQgO4-unsplash (1).jpg'
 
-const SectionHeader: React.FC = () => {
+interface SectionHeaderProps {
+  backgroundImage?: string;
+}
+
+const SectionHeader: React.FC<SectionHeaderProps> = ({ backgroundImage = defaultProfileImage }) => {
   return (
     <div>
       <div className="sectionHeader-container">
@@ -13,6 +18,7 @@ const SectionHeader: React.FC = () => {
               <span>Piccard</span>
             </h1>
           </Link>
+          <img src={backgroundImage} alt="Eliott Piccard" className="profileImage" />
         </div>
         <div className="rightPart">
           <div className="list">
