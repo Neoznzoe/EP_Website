@@ -383,4 +383,43 @@
     display: flex;
     gap: 16px;
   }
+
+  .icon-3dHome {
+    padding: 10px;
+    color: black !important;
+  }
+
+  .video-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-list {
+    flex-direction: column;
+    position: absolute;
+    padding: 0 24px;
+    gap: 24px;
+  }
+
+  .carousel-button {
+    font-size: 1.5rem;
+  }
+
+  .indicators {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
 }

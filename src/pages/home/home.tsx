@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -15,6 +15,16 @@ const videoUrls = [
 
 const HomePage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 425);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % videoUrls.length);
@@ -25,6 +35,9 @@ const HomePage: React.FC = () => {
   };
 
   const getCurrentVideos = () => {
+    if (isMobile) {
+      return videoUrls;
+    }
     const result = [];
     for (let i = 0; i < 3; i++) {
       result.push(videoUrls[(currentIndex + i) % videoUrls.length]);
@@ -81,7 +94,7 @@ const HomePage: React.FC = () => {
         <span className='title-part'>Mes Actus</span>
         <span className='subtitle-part'>Web Série : Edge to Edge</span>
         <div className='carousel'>
-          <button className='carousel-button' onClick={prevSlide}>‹</button>
+          {!isMobile && <button className='carousel-button' onClick={prevSlide}>‹</button>}
           <div className='video-list'>
             {currentVideos.map((url, index) => (
               <div key={index} className='video-container'>
@@ -97,10 +110,10 @@ const HomePage: React.FC = () => {
               </div>
             ))}
           </div>
-          <button className='carousel-button' onClick={nextSlide}>›</button>
+          {!isMobile && <button className='carousel-button' onClick={nextSlide}>›</button>}
         </div>
         <div className='indicators'>
-          {videoUrls.map((_, index) => (
+          {!isMobile && videoUrls.map((_, index) => (
             <span
               key={index}
               className={`indicator ${currentIndex === index ? 'active' : ''}`}
