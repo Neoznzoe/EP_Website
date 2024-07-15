@@ -9,8 +9,9 @@ import ReuschImg from '../../assets/logo/sponsorsLogo/reusch.jpg';
 import DynastarImg from '../../assets/logo/sponsorsLogo/dynastar.jpeg';
 import LangeImg from '../../assets/logo/sponsorsLogo/lange.png'
 import SaisiesImg from '../../assets/logo/sponsorsLogo/saisies.jpg'
-
 import customImage from '../../assets/img/lucas-favre-BRTV55ErUZg-unsplash.jpg'
+
+import Footer from '../../component/footer/footer';
 
 const SponsorsPage: React.FC = () => {
   const sponsors = [
@@ -72,6 +73,7 @@ const SponsorsPage: React.FC = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

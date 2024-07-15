@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeader from '../../component/sectionHeader/sectionHeader'
-import './biography.css'
+import './biography.css';
+import Footer from '../../component/footer/footer';
 
 const BiographyPage: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const BiographyPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

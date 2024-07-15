@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeader from '../../component/sectionHeader/sectionHeader';
 import './palmares.css'
+import Footer from '../../component/footer/footer';
 
 const PalmaresPage: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const PalmaresPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

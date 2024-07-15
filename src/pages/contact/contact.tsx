@@ -3,6 +3,7 @@ import SectionHeader from '../../component/sectionHeader/sectionHeader';
 import './contact.css';  // Assurez-vous d'ajouter les styles CSS nécessaires dans ce fichier
 import { faInstagram, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from '../../component/footer/footer';
 
 const ContactPage: React.FC = () => {
   return (
@@ -50,6 +51,7 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
