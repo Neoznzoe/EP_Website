@@ -170,3 +170,12 @@
     width: auto;
   }
 }
+
+@media (max-width: 425px) {
+
+  .list ul li span {
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+}
