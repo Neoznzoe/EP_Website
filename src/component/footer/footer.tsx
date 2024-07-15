@@ -27,13 +27,13 @@ const Footer: React.FC = () => {
         <div className="footerSocials">
             <div className="footerIcons">
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebookF} className="footerIcon icon-3dHome" />
+                    <FontAwesomeIcon icon={faFacebookF} id='footerIcon' className="footerIcon icon-3dHome" />
                 </a>
                 <a href="https://www.instagram.com/eliott_piccard/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className="footerIcon icon-3dHome" />
+                    <FontAwesomeIcon icon={faInstagram} id='footerIcon' className="footerIcon icon-3dHome" />
                 </a>
                 <a href="https://www.linkedin.com/in/eliott-piccard-838ba7240/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedinIn} className="footerIcon icon-3dHome" />
+                    <FontAwesomeIcon icon={faLinkedinIn} id='footerIcon' className="footerIcon icon-3dHome" />
                 </a>
             </div>
         </div>

@@ -16,6 +16,7 @@ body, html {
   align-items: center;
   min-height: 100vh;
   background-color: #000;
+  min-height: 100vh;
 }
 
 .main {
@@ -298,7 +299,7 @@ footer {
   .video-container {
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0px;
     box-sizing: border-box;
   }
 
@@ -309,9 +310,7 @@ footer {
 
   .video-list {
     flex-direction: column;
-    position: absolute;
-    padding: 0 24px;
-    gap: 24px;
+    gap: 16px;
   }
 
   .carousel-button {
@@ -328,4 +327,8 @@ footer {
     height: 8px;
     margin: 0 3px;
   }
+
+  .footerCreator {
+  font-size: 10px;
+}
 }
