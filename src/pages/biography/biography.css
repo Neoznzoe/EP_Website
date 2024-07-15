@@ -45,6 +45,10 @@
     line-height: 1.5;
 }
 
+.english {
+    color: #aaa;
+}
+
 @media (max-width: 425px) {
 
     .content {
