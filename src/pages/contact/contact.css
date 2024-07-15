@@ -118,3 +118,24 @@
     transform: translateY(-10px);
   }
 }
+
+@media (max-width: 425px) {
+
+  .contact-container {
+    padding: 0;
+  }
+
+  .contact-container h2 {
+    font-size: 18px;
+    min-height: 69px;
+  }
+
+  .contact-details h3 {
+    font-size: 18px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+}

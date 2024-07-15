@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" rows={5}></textarea>
 
-              <button type="submit">SUBMIT</button>
+              <button type="submit">ENVOYER</button>
             </form>
           </div>
           <div className="contact-details"> 
