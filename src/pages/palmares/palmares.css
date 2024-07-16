@@ -1,42 +1,95 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f2f5f7;
+}
+
 .palmaresContainer {
-    justify-content: space-around;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    gap: 36px;
+  justify-content: space-around;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  gap: 36px;
 }
 
 .header h2 {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 
-.euroCupTitle h1, .worldCupTitle h1 {
-    padding: 0 0 8px 0;
+.euroCupTitle h1,
+.worldCupTitle h1 {
+  padding: 0 0 8px 0;
 }
 
-.euroCupTitle h2, .worldCupTitle h2 {
-    padding: 8px 0 0;
+.euroCupTitle h2,
+.worldCupTitle h2 {
+  padding: 8px 0 0;
 }
 
-.euroCupTitle {
-    background: #FFF;
-    box-shadow: 0 0 6px 0 rgba(#202024, .12);
-    width: 100%;
-    border: 1 px solid black !important;
-}
-
+.euroCupTitle,
 .worldCupTitle {
-    width: 100%;
+  width: 100%;
+  padding: 2rem;
 }
 
-.euroCupContainer {
-    width: 100%;
-    height: 100px;
-    background-color: aqua;
-}
-
+.euroCupContainer,
 .worldCupContainer {
-    width: 100%;
-    height: 100px;
-    background-color:burlywood;
+  position: relative;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 32px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: color 0.4s ease-out;
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.euroCupContainer:before,
+.worldCupContainer:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(0);
+  transition: transform 0.4s ease-out;
+}
+
+.euroCupContainer:hover:before,
+.worldCupContainer:hover:before {
+  transform: scaleY(1);
+}
+
+.euroCupContainer:hover,
+.worldCupContainer:hover {
+  color: #fff;
+  z-index: 10;
+}
+
+.euroCupTitle hr,
+.worldCupTitle hr {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.euroCupTitle h1,
+.euroCupTitle h2,
+.worldCupTitle h1,
+.worldCupTitle h2,
+.euroCupTitle span,
+.worldCupTitle span {
+    position: relative;
+    transition: color 0.4s ease-out;
+    z-index: 2;
 }
