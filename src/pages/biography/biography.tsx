@@ -9,7 +9,7 @@ const BiographyPage: React.FC = () => {
       <SectionHeader></SectionHeader>
       <div className="content">
         <div className="header">
-          <h1>Biographie</h1>
+          <h1>Biographie</h1>  
           <hr />
           <h2>Biography</h2>
         </div>
