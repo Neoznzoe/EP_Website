@@ -19,17 +19,17 @@ const PalmaresPage: React.FC = () => {
             <hr />
             <h2>European cup</h2>
             <div className="euroCupContainer">
-              <div className="victory">
-                <h1>Victoire</h1>
-                <span>1</span>
-              </div>
               <div className="podium">
                 <h1>Podium</h1>
                 <span>3</span>
               </div>
               <div className="top10">
                 <h1>Top 10</h1>
-                <span>10</span>
+                <span>11</span>
+              </div>
+              <div className="top30">
+                <h1>Top 30</h1>
+                <span>16</span>
               </div>
             </div>
           </div>

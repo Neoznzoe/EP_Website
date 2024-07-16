@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
   background-color: #f2f5f7;
 }
 
@@ -15,6 +14,7 @@ body {
   display: flex;
   width: 100%;
   gap: 36px;
+  font-family: "Geist";
 }
 
 .header h2 {
@@ -41,7 +41,7 @@ body {
 .worldCupContainer {
   position: relative;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid #021213;
   margin-top: 32px;
   cursor: pointer;
   background-color: #fff;
@@ -60,7 +60,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #021213;
   transform-origin: 0 bottom 0;
   transform: scaleY(0);
   transition: transform 0.4s ease-out;
@@ -92,4 +92,33 @@ body {
     position: relative;
     transition: color 0.4s ease-out;
     z-index: 2;
+}
+
+@media (max-width: 425px) {
+    
+    .palmaresContainer {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .euroCupTitle, .worldCupTitle {
+        padding: 0;
+    }
+    
+    .euroCupContainer, .worldCupContainer {
+        padding: 20px;
+    }
+
+    .worldCupContainer h1,
+    .euroCupContainer h1 {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0 0 16px 0;
+    }
+
+    .worldCupContainer span,
+    .euroCupContainer span {
+        font-size: 24px;
+        font-weight: 800;
+    }
 }
