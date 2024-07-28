@@ -149,9 +149,6 @@ const HomePage: React.FC = () => {
             <span>Eliott Piccard </span>
             <span>Eliott Piccard </span>
             <span>Eliott Piccard </span>
-            <span>Eliott Piccard </span>
-            <span>Eliott Piccard </span>
-            <span>Eliott Piccard </span>
           </div>
         </div>
       </div>
