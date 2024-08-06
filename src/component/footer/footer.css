@@ -15,9 +15,11 @@
     justify-content: space-between;
 }
 
-.footerCreator {
+.footerCreator a {
     font-size: 12px;
     font-weight: 200;
+    text-decoration: none;
+    color: white;
 }
 
 .footer-right {

@@ -38,7 +38,10 @@ const Footer: React.FC = () => {
             </div>
         </div>
         <div className="footerCreator">
-            Création: Victor Besson
+          <a href="https://vbes.fr" target='blank'>
+            <span>Création: vbes.fr</span>
+          </a>
+          {/* Création: Victor Besson */}
         </div>
       </div>
       <div className="footer-right">
