@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './home.css';
-import profileimage from '../../assets/img/vincent-van-gogh.jpg';
+import profileimage from '../../assets/img/ep_start.jpg';
 import EPlogo from '../../assets/logo/EP-logo.svg';
 import Footer from '../../component/footer/footer';
 
@@ -60,7 +60,12 @@ const HomePage: React.FC = () => {
           </div>
           <div className="navPart">
             <div className="miniBio">
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis placeat provident illum odit cumque dolor reprehenderit eligendi id quae earum numquam, possimus, asperiores mollitia veritatis ut quidem. Nostrum, deserunt!</span>
+              <span>
+              Salut, moi c’est eliott, je fais du skicross.
+              Étant issu d’une famille nombreuse de skieurs, je me suis tourné
+              vers un sport qui se pratique à plusieurs, le fanatisme des sports de
+              contact m’ont emmené vers le skicross ...
+              </span>
             </div>
             <div className="list">
               <ul>

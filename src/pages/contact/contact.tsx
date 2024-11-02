@@ -4,11 +4,12 @@ import './contact.css';  // Assurez-vous d'ajouter les styles CSS nécessaires d
 import { faInstagram, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from '../../component/footer/footer';
+import customImage from '../../assets/img/ep_contact.jpg';
 
 const ContactPage: React.FC = () => {
   return (
     <div>
-      <SectionHeader />
+      <SectionHeader backgroundImage={customImage}/>
       <div className="content">
         <div className="header">
           <h1>CONTACT</h1>

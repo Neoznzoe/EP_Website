@@ -9,6 +9,12 @@ body, html {
   height: 100%;
 }
 
+.profilPicture {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover; /* Ajuste l'image pour remplir la div sans la déformer */
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,8 +43,8 @@ body, html {
 
 .logo {
   position: absolute;
-  left: 40%;
-  top: 50%;
+  left: 45%;
+  top: 32%;
   transform: translate(-50%, -50%);
   height: 120px;
 }

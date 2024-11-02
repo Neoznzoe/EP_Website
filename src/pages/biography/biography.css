@@ -37,12 +37,18 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    font-size: 18px;
 }
 
 .bios .french, .bios .english {
     width: 45%;
     padding: 20px;
     line-height: 1.5;
+}
+
+span br {
+    display: block;
+    margin-bottom: 12px; /* Adjust the value as needed */
 }
 
 .english {

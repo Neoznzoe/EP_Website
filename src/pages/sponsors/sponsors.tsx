@@ -3,13 +3,13 @@ import SectionHeader from '../../component/sectionHeader/sectionHeader';
 import SponsorCard from '../../component/sponsorComponent/sponsorComponent';
 import './sponsors.css';
 import LekiImg from '../../assets/logo/sponsorsLogo/leki.jpg';
-import PocImg from '../../assets/logo/sponsorsLogo/poc.png';
-import EnergiapuraImg from '../../assets/logo/sponsorsLogo/energiapura.jpg';
+import TripoinImg from '../../assets/logo/sponsorsLogo/tripoint.svg';
+import LookImg from '../../assets/logo/sponsorsLogo/look.png';
 import ReuschImg from '../../assets/logo/sponsorsLogo/reusch.jpg';
 import DynastarImg from '../../assets/logo/sponsorsLogo/dynastar.jpeg';
 import LangeImg from '../../assets/logo/sponsorsLogo/lange.png'
 import SaisiesImg from '../../assets/logo/sponsorsLogo/saisies.jpg'
-import customImage from '../../assets/img/lucas-favre-BRTV55ErUZg-unsplash.jpg'
+import customImage from '../../assets/img/ep_sponsors.jpg'
 
 import Footer from '../../component/footer/footer';
 
@@ -18,37 +18,37 @@ const SponsorsPage: React.FC = () => {
     {
       imageSrc: SaisiesImg,
       title: 'Les Saisies',
-      description: 'Another description for a different sponsor or product.',
+      description: 'Station de coeur depuis ma naissance.',
     },
     {
       imageSrc: LekiImg,
       title: 'Leki',
-      description: 'Another description for a different sponsor or product.',
+      description: 'Bâtons pour se battre.',
     },
     {
-      imageSrc: PocImg,
-      title: 'Poc',
-      description: 'Another description for a different sponsor or product.',
+      imageSrc: TripoinImg,
+      title: 'Tripoint',
+      description: 'Masque et lunettes de viking.',
     },
     {
-      imageSrc: EnergiapuraImg,
-      title: 'Energiapura',
-      description: 'Another description for a different sponsor or product.',
+      imageSrc: LookImg,
+      title: 'Look',
+      description: 'Fixation qui restent fixée.',
     },
     {
       imageSrc: ReuschImg,
       title: 'Reusch',
-      description: 'Another description for a different sponsor or product.',
+      description: 'Les gants du seigneur.',
     },
     {
       imageSrc: DynastarImg,
       title: 'Dynastar',
-      description: 'Another description for a different sponsor or product.',
+      description: 'Ski qui glisse trop.',
     },
     {
       imageSrc: LangeImg,
       title: 'Lange',
-      description: 'Another description for a different sponsor or product.',
+      description: 'Chaussures de ski aussi précise qu’un scalpel.',
     },
   ];
 

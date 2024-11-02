@@ -2,11 +2,12 @@ import React from 'react';
 import SectionHeader from '../../component/sectionHeader/sectionHeader';
 import './palmares.css';
 import Footer from '../../component/footer/footer';
+import customImage from '../../assets/img/ep_race.jpg'; 
 
 const PalmaresPage: React.FC = () => {
   return (
     <div>
-      <SectionHeader />
+    <SectionHeader backgroundImage={customImage}/>
       <div className="content">
         <div className="header">
           <h1>Résultats</h1>
